@@ -1013,7 +1013,7 @@
     if (event.gamma == null || event.beta == null) return;
     const rad = Math.PI / 180;
     let x = Math.sin(event.gamma * rad);
-    let y = -Math.sin(event.beta * rad);
+    let y = Math.sin(event.beta * rad);
     const angle = screenAngle();
     if (angle === 90) { const swap = x; x = -y; y = swap; }
     else if (angle === 270) { const swap = x; x = y; y = -swap; }

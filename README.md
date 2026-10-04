@@ -4,9 +4,8 @@
 
 App 圖示是便便。
 
-Release APK：`app/build/outputs/apk/release/app-release-unsigned.apk`
+可安裝的 APK 由 GitHub Actions 組建。推上 `v*` tag（例如 `v1.0`）後，Actions 用 debug keystore 簽名，並把 `maze-v1.0.apk` 掛到 GitHub Release。
 
-這個套件沒有設定簽名，所以檔名帶 `unsigned`。
 
 # 功能
 
