@@ -158,6 +158,11 @@
         wide("從圖片讀取", function () { file.click(); }),
         el("label", { class: "field" }, [el("span", { text: "貼上迷宮文字" }), area]),
         wide("用文字加入", function () { showScanResult(core.decodeShareText(paste)); }),
+        el("a", {
+          class: "wide",
+          href: "https://github.com/faat3din1/maze/releases/download/v1.0.0/maze-v1.0.0.apk",
+          text: "下載 Android APK",
+        }),
         file,
       ]),
     ]);
